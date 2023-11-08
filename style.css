@@ -1,0 +1,521 @@
+.red-color {
+    color: red !important;
+}
+
+.white-color {
+    color: white !important;
+}
+
+.w-30 {
+    width: 30%;
+    display: inline-block;
+}
+
+.w-69 {
+    width: 69%;
+    display: inline-block;
+}
+
+.mg-bt-80 {
+    margin-bottom: 80px;
+}
+
+/*END COMMON */
+
+body {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px;
+    padding: 0px 5px;
+    width: 1024px;
+    font-size: 1.2em;
+    top: 0;
+    margin: 0 auto;
+    grid-template-areas: 
+    "header-cell"
+    "nav-cell"
+    "main-cell"
+    "footer-cell"
+    ;
+}
+
+header {
+    grid-area: header-cell;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0px 5px;
+    height: 100px;
+    background-image: url('./header.png');
+    position: relative;
+}
+
+header .search-product {
+    padding-top: 3px;
+    float: right;
+    bottom: -16px;
+    position: relative;
+    right: 4px;
+}
+
+header .search-product input {
+    padding: 4px;
+}
+
+header .search-product .btn,
+.main-content .address .address-icon,
+.main-content .feedback .icon,
+.login .icon,
+.order .delete {
+    padding: 4px;
+    min-width: 30px;
+    text-align: center;
+    background-color: #cddc39;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@keyframes imgMove1 {
+    from {
+        left: 80%;
+    } to {
+        left: 30%;
+    }
+}
+
+@keyframes imgMove2 {
+    from {
+        left: 80%;
+    } to {
+        left: 45%;
+    }
+}
+
+@keyframes imgMove3 {
+    from {
+        left: 80%;
+    } to {
+        left: 63%;
+    }
+}
+
+header .img1 {
+    height: 100px;
+    top: -5px;
+    animation: imgMove1 3s;
+    position: absolute;
+    z-index: 0;
+    left: 30%;
+}
+
+header .img2 {
+    height: 70px;
+    top: -30px;
+    animation: imgMove2 3s;
+    position: absolute;
+    z-index: 0;
+    left: 45%;
+}
+
+header .img3 {
+    height: 80px;
+    top: 0px;
+    animation: imgMove3 3s;
+    z-index: 0;
+    position: absolute;
+    left: 63%;
+}
+
+nav {
+    grid-area: nav-cell;
+    position: absolute;
+    z-index: 1;
+    bottom: 12px;
+}
+
+nav a {
+    margin: 3px;
+    border: solid 1px #fff;
+    padding: 2px 4px;
+    height: 20px;
+    color: #ed4190;
+    text-align: center;
+    background-color: #ffffff80;
+    font-size: 17px;
+    float: flex;
+    text-decoration: none;
+    position: 0;
+    /* box-shadow: 0 0 3px 0 #00000066; */
+    box-shadow: 0 0 2px 0 #0000004d;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #ed4190;
+}
+
+main {
+    grid-area: main-cell;
+    display: grid;
+    border: 1px solid #ccc7c8;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.grid-1-1-1 {
+    display: grid;
+    column-gap: 8px;
+    grid-template-areas: 
+        "left-cell"
+        "article-cell"
+        "right-cell"
+    ;
+}
+
+.grid-3-1 {
+    display: grid;
+    column-gap: 8px;
+    grid-template-areas: "article-cell article-cell article-cell right-cell";
+}
+
+.grid-1-3 {
+    display: grid;
+    column-gap: 8px;
+    grid-template-areas: "left-cell article-cell article-cell article-cell";
+}
+
+.grid-1-3-1 {
+    display: grid;
+    column-gap: 8px;
+    grid-template-areas: "left-cell article-cell article-cell article-cell right-cell";
+}
+
+.main-content {
+    grid-area: article-cell;
+}
+
+aside {
+    margin: 2px;
+    padding: 5px;
+    color: #000;
+    text-align: justify;
+}
+
+.aside-left {
+    grid-area: left-cell;
+}
+
+.aside-right {
+    grid-area: right-cell;
+}
+
+.main-content h1 ,
+aside h1,
+.order .title {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #F90B6D;
+    font-size: 28px;
+    text-align: center;
+}
+
+.main-content h1::after,
+aside h1::after,
+.order .title::after {
+    content: "";
+    position: relative;
+    display: block;
+    margin: 12px 0 16px 0;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    transform: rotateX(-12deg) translateX(-50%);
+    background: linear-gradient(#cddc39, #fff);
+}
+
+aside h1::after {
+    width: 75%;
+}
+
+.main-content h2,
+aside h2 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #f90B6D;
+    font-size: 24px;
+}
+
+.main-content h3,
+aside h3 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #f90B6D;
+    font-size: 20px;
+}
+
+.main-content .new-product,
+.main-content .homemade-yogurt
+.main-content .tutorial {
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+.main-content .new-product .describe .content {
+    margin-left: 10px;
+}
+
+.main-content .new-product .describe .img-product {
+    float: left;
+}
+
+.main-content .describe .content p {
+    margin: 0;
+}
+
+.main-content .homemade-yogurt {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.main-content .homemade-yogurt .describe .video-homemade-yogurt {
+    float: right;
+}
+
+.main-content .tutorial .content {
+    display: flex;
+}
+
+.main-content .tutorial .content .item {
+    width: 50%;
+}
+
+.main-content .tutorial .content .material {
+    margin-right: 5px;
+}
+
+.main-content article img {
+    border-radius: 5px;
+}
+
+.main-content .order {
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-content .order .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.main-content .order .list-item .item {
+    width: 24%;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #ed4190;
+    padding-top: 5px;
+    margin: 2px;
+    padding: 0 2px;
+}
+
+.main-content .order .list-item .item a {
+    display: block;
+    margin-top: 8px;
+}
+
+.main-content .order img {
+    width: 50%;
+}
+
+/* END TRANG CHU */
+
+/* START SAN PHAM */
+.main-content .products {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.main-content .products .list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-content .list-item .item {
+    margin: 3px;
+    border: 1px solid #dbd7d9;
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.main-content .list-item .item img {
+    margin: 0 auto;
+}
+
+.main-content .list-item .content-product-item {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.main-content .list-item .item .number {
+    background: linear-gradient(#fff, #cddc39);
+    display: block;
+}
+
+/* END SAN PHAM */
+
+/* START LIEN HE  */
+.main-content .address {
+    display: flex;
+}
+
+.main-content .address .address-icon {
+    height: 36px;
+    padding: 4px 12px;
+    position: relative;
+    top: 12px;
+}
+
+.main-content .address .info-address {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.main-content .feedback {
+    margin: 0 auto;
+}
+
+.main-content .feedback fieldset {
+    border: 0 none;
+}
+
+.main-content .feedback-form tr,
+.login tr {
+    display: flex;
+    align-items: end;
+}
+
+.main-content .feedback-form td,
+.login td {
+    margin-right: 4px;
+}
+
+.main-content .feedback .icon,
+.login .icon {
+    color: #fff;
+}
+
+/* END LIEN HE */
+
+/* START GIOI THIEU  */
+
+.main-content .bg-header-about {
+    width: 100%;
+}
+
+/* END GIOI THIEU  */
+
+/* START TIN TUC  */
+
+aside .left .hotnews {
+    width: 100%;
+}
+
+.main-content .news .content img {
+    float: right;
+    width: 33%;
+}
+
+.main-content .news .content p {
+    width: 66%;
+}
+
+/* END TIN TUC  */
+
+/* START DANG NHAP  */
+
+.login .form {
+    padding: 0 24%;
+}
+
+.login .form .userlogin {
+    width: 50%;
+}
+
+.login .form fieldset {
+    border: 0 none;
+}
+
+/* END DANG NHAP  */
+
+/* START DANG KY  */
+
+.login .form {
+    padding: 0 24%;
+}
+
+.login .form fieldset {
+    border: 0 none;
+}
+
+/* END DANG KY  */
+
+/* START DON HANG  */
+
+table thead {
+    color: #ed4190;
+}
+
+.order tbody th, .order tbody tr, .order tbody td,
+.order tfoot tr, .order tfoot td {
+    border: 1px solid;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.order tfoot tr, .order tfoot td{
+    text-align: right;
+}
+
+/* END DON HANG  */
+
+/* START FOOTER  */
+
+footer {
+    grid-area: footer-cell;
+    margin-top: 2px;
+    padding: 0 5px;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc7c8;
+}
+
+footer .icon {
+    color: #ed4190;
+}
+
+footer .top {
+    position: fixed;
+    padding: 10px;
+    color: #ed4190;
+    bottom: 5px;
+    right: 10px;
+    z-index: 100;
+}
+
+footer .top img {
+    width: 68px;
+}
+
+/* END FOOTER  */

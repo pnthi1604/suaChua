@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liên Hệ</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./trangchu.html"><img id="logo" src="./images/logo.png" alt="" type="image/vnd.microsoft.icon"></a>
+        </div>
+        <nav>
+            <a href="./trangchu.html">Trang Chủ</a>
+            <a href="./gioithieu.html">Giới Thiệu</a>
+            <a href="./sanpham.html">Sản Phẩm</a>
+            <a href="./tintuc.html">Tin Tức</a>
+            <a href="./dangnhap.html">Đăng Nhập</a>
+            <a href="./dangky.html">Đăng Ký</a>
+            <a href="./lienhe.html">Liên Hệ</a>
+        </nav>
+        <img class="img1" src="./header-img1.png" alt="">
+        <img class="img2" src="./header-img2.png" alt="">
+        <img class="img3" src="./header-img3.png" alt="">
+        <form class="search-product" action="timkiem.html" method="GET">
+            <input required name="search" class="search" type="text" placeholder="Nhập nội dung cần tìm...">
+            <button class="btn search">
+                <i class=".icon fa-solid fa-magnifying-glass white-color"></i>
+            </button>
+            <button class="btn cart">
+                <i class=".icon fa-solid fa-cart-shopping red-color"></i>
+            </button>
+        </form>
+    </header>
+
+    <main class="grid-1-1-1">
+        <div class="main-content grid-1-1-1">
+            <h1>Liên hệ</h1>
+            <div class="address">
+                <p class="info-address">
+                    <img class="address-icon" src="./images/lienhe/check-in.png" alt="">
+                    <b>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ</b>
+                    Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cám ơn.
+                </p>
+            </div>
+
+            <h1>Góp ý</h1>
+            <div class="feedback">
+                <fieldset>
+                    <!-- <legend>Góp ý</legend> -->
+                    <form action="" method="post" enctype="application/x-www-form-urlencoded" class="info-user">
+                        <table class="feedback-form">
+                            <tr>
+                                <td>
+                                    <label for="name">
+                                        <i class="fa-solid fa-user icon user"></i>
+                                    </label>
+                                </td>
+                                <td><input required id="name" type="text" name="username" placeholder="Vui lòng nhập Họ tên của bạn">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">
+                                        <i class="fa-solid fa-envelope icon email"></i>
+                                    </label>
+                                </td>
+                                <td><input required id="email" type="text" name="email"
+                                        placeholder="Vui lòng nhập địa chỉ Email"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="topic">
+                                        <i class="fa-solid fa-list icon topic"></i>
+                                    </label>
+                                </td>
+                                <td>
+                                    <select name="topic" id="topic" size="1">
+                                        <option value="">Về Sản Phẩm/ Dịch Vụ</option>
+                                        <option value="">Về Ưu Đãi Thành Viên</option>
+                                        <option value="">Về Tin Tuyển Dụng</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="content">
+                                        <i class="fa-regular fa-file icon text"></i>
+                                    </label>
+                                </td>
+                                <td colspan="1">
+                                    <textarea required minlength="10" name="content" id="content" cols="50" rows="7"
+                                        placeholder="Nội dung cần liên hệ"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input required type="submit" value="Gửi">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy 2021 Bản quyền thuộc về FreeezeVN. <a href="https://www.facebook.com/?locale=vi_VN"><i
+                    class="icon fa-brands fa-facebook"></i></a> <a href="https://twitter.com/?lang=vi"><i
+                    class="icon fa-brands fa-twitter"></i></a> <a href="https://www.pinterest.com/"><i
+                    class="icon fa-brands fa-pinterest"></i></a>
+        </p>
+        <a class="top" href="#logo">
+            <img src="./top.png" alt="">
+        </a>
+    </footer>
+
+    <script src="./header.js"></script>
+    <script src="./validateForm.js"></script>
+</body>
+
+</html>

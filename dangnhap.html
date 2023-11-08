@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./trangchu.html"><img id="logo" src="./images/logo.png" alt="" type="image/vnd.microsoft.icon"></a>
+        </div>
+        <nav>
+            <a href="./trangchu.html">Trang Chủ</a>
+            <a href="./gioithieu.html">Giới Thiệu</a>
+            <a href="./sanpham.html">Sản Phẩm</a>
+            <a href="./tintuc.html">Tin Tức</a>
+            <a href="./dangnhap.html">Đăng Nhập</a>
+            <a href="./dangky.html">Đăng Ký</a>
+            <a href="./lienhe.html">Liên Hệ</a>
+        </nav>
+        <img class="img1" src="./header-img1.png" alt="">
+        <img class="img2" src="./header-img2.png" alt="">
+        <img class="img3" src="./header-img3.png" alt="">
+        <form class="search-product" action="timkiem.html" method="GET">
+            <input required name="search" class="search" type="text" placeholder="Nhập nội dung cần tìm...">
+            <button class="btn search">
+                <i class=".icon fa-solid fa-magnifying-glass white-color"></i>
+            </button>
+            <button class="btn cart">
+                <i class=".icon fa-solid fa-cart-shopping red-color"></i>
+            </button>
+        </form>
+    </header>
+
+    <main class="grid-1-1-1">
+        <div class="main-content login">
+            <div class="form login">
+                <fieldset>
+                    <h1>ĐĂNG NHẬP</h1>
+                    <form class="info-user" action="" method="post" enctype="application/x-www-form-urlencoded">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    <img class="userlogin" src="./images/dangnhap/userlogin.png" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">
+                                    <i class="icon fa-solid fa-envelope"></i>
+                                </label></td>
+                                <td><input required id="email" type="text" name="email" placeholder="Nhập email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">
+                                    <i class="icon fa-solid fa-key"></i>
+                                </label></td>
+                                <td><input required id="password" type="password" name="password" placeholder="Nhập mật khẩu"></td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label for="">
+                                        Bạn quên <a href="">Mật Khẩu?</a> <input required type="checkbox" name="remember"> Ghi
+                                        nhớ cho
+                                        lần
+                                        đăng nhập sau
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input required type="submit" value="Đăng Nhập">
+                                    <input required type="reset" value="Hủy">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy 2021 Bản quyền thuộc về FreeezeVN. <a href="https://www.facebook.com/?locale=vi_VN"><i
+                    class="icon fa-brands fa-facebook"></i></a> <a href="https://twitter.com/?lang=vi"><i
+                    class="icon fa-brands fa-twitter"></i></a> <a href="https://www.pinterest.com/"><i
+                    class="icon fa-brands fa-pinterest"></i></a>
+        </p>
+        <a class="top" href="#logo">
+            <img src="./top.png" alt="">
+        </a>
+    </footer>
+
+    <script src="./header.js"></script>
+    <script src="./validateForm.js"></script>
+</body>
+
+</html>
